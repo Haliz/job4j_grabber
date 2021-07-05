@@ -8,6 +8,13 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class SqlRuDateTimeParser implements DateTimeParser {
+
+    private static final Map<String, String> MONTHS = new HashMap<>();
+
+    public SqlRuDateTimeParser() {
+        SqlRuDateTimeParser.setMonths();
+    }
+
     @Override
     public LocalDateTime parse(String parse) {
         String[] split = parse.split(",");
@@ -29,19 +36,21 @@ public class SqlRuDateTimeParser implements DateTimeParser {
     }
 
     public String getMonth(String month) {
-        Map<String, String> months = new HashMap<>();
-        months.put("янв", "01");
-        months.put("фев", "02");
-        months.put("мар", "03");
-        months.put("апр", "04");
-        months.put("май", "05");
-        months.put("июн", "06");
-        months.put("июл", "07");
-        months.put("авг", "08");
-        months.put("сен", "09");
-        months.put("окт", "10");
-        months.put("ноя", "11");
-        months.put("дек", "12");
-        return months.get(month);
+        return MONTHS.get(month);
+    }
+
+    private static void setMonths() {
+        MONTHS.put("янв", "01");
+        MONTHS.put("фев", "02");
+        MONTHS.put("мар", "03");
+        MONTHS.put("апр", "04");
+        MONTHS.put("май", "05");
+        MONTHS.put("июн", "06");
+        MONTHS.put("июл", "07");
+        MONTHS.put("авг", "08");
+        MONTHS.put("сен", "09");
+        MONTHS.put("окт", "10");
+        MONTHS.put("ноя", "11");
+        MONTHS.put("дек", "12");
     }
 }
