@@ -4,16 +4,23 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
-import java.util.HashMap;
 import java.util.Map;
 
 public class SqlRuDateTimeParser implements DateTimeParser {
 
-    private static final Map<String, String> MONTHS = new HashMap<>();
-
-    public SqlRuDateTimeParser() {
-        SqlRuDateTimeParser.setMonths();
-    }
+    private static final Map<String, String> MONTHS = Map.ofEntries(
+            Map.entry("янв", "01"),
+            Map.entry("фев", "02"),
+            Map.entry("мар", "03"),
+            Map.entry("апр", "04"),
+            Map.entry("май", "05"),
+            Map.entry("июн", "06"),
+            Map.entry("июл", "07"),
+            Map.entry("авг", "08"),
+            Map.entry("сен", "09"),
+            Map.entry("окт", "10"),
+            Map.entry("ноя", "11"),
+            Map.entry("дек", "12"));
 
     @Override
     public LocalDateTime parse(String parse) {
@@ -28,29 +35,10 @@ public class SqlRuDateTimeParser implements DateTimeParser {
         } else {
             String[] splitDate = inDate.split(" ");
             String day = String.format("%02d", Integer.parseInt(splitDate[0]));
-            String month = getMonth(splitDate[1]);
+            String month = MONTHS.get(splitDate[1]);
             outDate = LocalDate.parse(day + "." + month + "." + splitDate[2],
                     DateTimeFormatter.ofPattern("dd.MM.uu"));
         }
         return LocalDateTime.of(outDate, outTime);
-    }
-
-    public String getMonth(String month) {
-        return MONTHS.get(month);
-    }
-
-    private static void setMonths() {
-        MONTHS.put("янв", "01");
-        MONTHS.put("фев", "02");
-        MONTHS.put("мар", "03");
-        MONTHS.put("апр", "04");
-        MONTHS.put("май", "05");
-        MONTHS.put("июн", "06");
-        MONTHS.put("июл", "07");
-        MONTHS.put("авг", "08");
-        MONTHS.put("сен", "09");
-        MONTHS.put("окт", "10");
-        MONTHS.put("ноя", "11");
-        MONTHS.put("дек", "12");
     }
 }
