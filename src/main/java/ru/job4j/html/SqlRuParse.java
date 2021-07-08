@@ -12,11 +12,25 @@ public class SqlRuParse {
             Elements row = doc.select(".postslisttopic");
             for (Element td : row) {
                 Element href = td.child(0);
-                System.out.println(href.attr("href"));
+                String link = href.attr("href");
+                System.out.println(link);
                 System.out.println(href.text());
                 Element date = td.parent().child(5);
                 System.out.println(date.text());
+                parsingPostDescription(link);
             }
         }
+    }
+
+    public static void parsingPostDescription(String url) throws Exception {
+        Document doc = Jsoup.connect(url).get();
+        Elements row = doc.select(".msgBody");
+        String text = row.get(1).text();
+        String date = doc.select(".msgFooter").first().ownText();
+        int index = date.indexOf(" [] |");
+        String editedDate = date.substring(0, index);
+        System.out.println(text);
+        System.out.println(editedDate);
+        System.out.println("------------------------------------------------------------");
     }
 }
