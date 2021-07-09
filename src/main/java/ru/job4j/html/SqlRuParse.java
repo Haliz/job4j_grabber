@@ -15,8 +15,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SqlRuParse implements Parse {
+
+    private final DateTimeParser dateTimeParser;
+
+    public SqlRuParse(DateTimeParser dateTimeParser) {
+        this.dateTimeParser = dateTimeParser;
+    }
+
     public static void main(String[] args) {
-        SqlRuParse parse = new SqlRuParse();
+        SqlRuParse parse = new SqlRuParse(new SqlRuDateTimeParser());
         List<Post> list = parse.list("https://www.sql.ru/forum/job-offers");
         list.forEach(System.out::println);
         System.out.println(list.size());
@@ -32,11 +39,7 @@ public class SqlRuParse implements Parse {
                 for (Element td : row) {
                     Element href = td.child(0);
                     String descriptionLink = href.attr("href");
-                    String title = href.text();
-                    Post post = detail(descriptionLink);
-                    post.setLink(descriptionLink);
-                    post.setTitle(title);
-                    posts.add(post);
+                    posts.add(detail(descriptionLink));
                 }
             }
         } catch (IOException e) {
@@ -51,13 +54,15 @@ public class SqlRuParse implements Parse {
         try {
             Document doc = Jsoup.connect(link).get();
             Elements row = doc.select(".msgBody");
+            String title = doc.select(".messageHeader").first().ownText();
             String text = row.get(1).text();
             String date = doc.select(".msgFooter").first().ownText();
             int index = date.indexOf(" [] |");
             String editedDate = date.substring(0, index);
+            LocalDateTime setDate = dateTimeParser.parse(editedDate);
+            post.setTitle(title);
+            post.setLink(link);
             post.setDescription(text);
-            DateTimeParser dateParser = new SqlRuDateTimeParser();
-            LocalDateTime setDate = dateParser.parse(editedDate);
             post.setCreated(setDate);
         } catch (IOException e) {
             e.printStackTrace();
