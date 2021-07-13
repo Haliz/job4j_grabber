@@ -1,0 +1,173 @@
+insert into company (id, name) values (1, 'Oloo');
+insert into company (id, name) values (2, 'Yabox');
+insert into company (id, name) values (3, 'Meezzy');
+insert into company (id, name) values (4, 'Plajo');
+insert into company (id, name) values (5, 'Edgeclub');
+
+
+insert into person (id, name, company_id) values (1, 'Muffin Dollar', 5);
+insert into person (id, name, company_id) values (2, 'Veriee Gummer', 1);
+insert into person (id, name, company_id) values (3, 'Austen Beretta', 3);
+insert into person (id, name, company_id) values (4, 'Vicki Kirckman', 2);
+insert into person (id, name, company_id) values (5, 'Nollie Pillifant', 3);
+insert into person (id, name, company_id) values (6, 'Briney Snar', 1);
+insert into person (id, name, company_id) values (7, 'Neale Paulat', 4);
+insert into person (id, name, company_id) values (8, 'Tripp Tussaine', 4);
+insert into person (id, name, company_id) values (9, 'Valery Blunsom', 4);
+insert into person (id, name, company_id) values (10, 'Roseanne Pendrey', 1);
+insert into person (id, name, company_id) values (11, 'Helen Spilstead', 5);
+insert into person (id, name, company_id) values (12, 'Giff Castellaccio', 4);
+insert into person (id, name, company_id) values (13, 'Lelah Cridlin', 5);
+insert into person (id, name, company_id) values (14, 'Lanni Sybe', 1);
+insert into person (id, name, company_id) values (15, 'Shannon Rowthorn', 1);
+insert into person (id, name, company_id) values (16, 'Ingrid Spoerl', 3);
+insert into person (id, name, company_id) values (17, 'Guillemette Dugget', 4);
+insert into person (id, name, company_id) values (18, 'Giffer Kuhnel', 2);
+insert into person (id, name, company_id) values (19, 'Bartel Gilpin', 1);
+insert into person (id, name, company_id) values (20, 'Phillida Barendtsen', 5);
+insert into person (id, name, company_id) values (21, 'Berrie Brisco', 4);
+insert into person (id, name, company_id) values (22, 'Chicky Ardron', 5);
+insert into person (id, name, company_id) values (23, 'Willyt Redgrove', 5);
+insert into person (id, name, company_id) values (24, 'Dacey Wodham', 3);
+insert into person (id, name, company_id) values (25, 'Saba Gallager', 5);
+insert into person (id, name, company_id) values (26, 'Adamo MacGregor', 4);
+insert into person (id, name, company_id) values (27, 'Cynde Buggy', 4);
+insert into person (id, name, company_id) values (28, 'Alexandrina Klewer', 2);
+insert into person (id, name, company_id) values (29, 'Avigdor Atkyns', 3);
+insert into person (id, name, company_id) values (30, 'Brandea Drummond', 4);
+insert into person (id, name, company_id) values (31, 'Carny Goodisson', 4);
+insert into person (id, name, company_id) values (32, 'Gene Mayfield', 5);
+insert into person (id, name, company_id) values (33, 'Idalina Golston', 5);
+insert into person (id, name, company_id) values (34, 'Flori Thurstance', 5);
+insert into person (id, name, company_id) values (35, 'Fallon Dunklee', 4);
+insert into person (id, name, company_id) values (36, 'Cate Downgate', 5);
+insert into person (id, name, company_id) values (37, 'Dee dee Verry', 5);
+insert into person (id, name, company_id) values (38, 'Giacobo Elvish', 4);
+insert into person (id, name, company_id) values (39, 'Perceval Huscroft', 3);
+insert into person (id, name, company_id) values (40, 'Eugenius Posnett', 4);
+insert into person (id, name, company_id) values (41, 'Natka Alabaster', 4);
+insert into person (id, name, company_id) values (42, 'Faunie Eustis', 3);
+insert into person (id, name, company_id) values (43, 'Kendall Van der Linde', 5);
+insert into person (id, name, company_id) values (44, 'Garnet Haire', 5);
+insert into person (id, name, company_id) values (45, 'Carlos Solesbury', 1);
+insert into person (id, name, company_id) values (46, 'Toiboid Smee', 3);
+insert into person (id, name, company_id) values (47, 'Reagan Scroggins', 4);
+insert into person (id, name, company_id) values (48, 'Katerina Rutter', 2);
+insert into person (id, name, company_id) values (49, 'Bernete Shailer', 1);
+insert into person (id, name, company_id) values (50, 'Arnaldo Dun', 5);
+insert into person (id, name, company_id) values (51, 'Reuben Matyja', 3);
+insert into person (id, name, company_id) values (52, 'Cassey McKechnie', 3);
+insert into person (id, name, company_id) values (53, 'Aveline Roggieri', 5);
+insert into person (id, name, company_id) values (54, 'Corabella Ridhole', 2);
+insert into person (id, name, company_id) values (55, 'Leonardo Yoseloff', 5);
+insert into person (id, name, company_id) values (56, 'Dorisa Raunds', 4);
+insert into person (id, name, company_id) values (57, 'Anjanette Hairyes', 5);
+insert into person (id, name, company_id) values (58, 'Linet Lodo', 5);
+insert into person (id, name, company_id) values (59, 'Terrijo Campion', 2);
+insert into person (id, name, company_id) values (60, 'Kristyn Terran', 5);
+insert into person (id, name, company_id) values (61, 'Desi Pretty', 5);
+insert into person (id, name, company_id) values (62, 'Roxy Kettow', 4);
+insert into person (id, name, company_id) values (63, 'Bradley Joutapavicius', 5);
+insert into person (id, name, company_id) values (64, 'Joy Pudner', 2);
+insert into person (id, name, company_id) values (65, 'Allen Ciccottio', 3);
+insert into person (id, name, company_id) values (66, 'Jesus Tunno', 1);
+insert into person (id, name, company_id) values (67, 'Garrott Pizzie', 5);
+insert into person (id, name, company_id) values (68, 'Colleen Wilding', 5);
+insert into person (id, name, company_id) values (69, 'Traver Coxhead', 5);
+insert into person (id, name, company_id) values (70, 'Ariana Guisby', 5);
+insert into person (id, name, company_id) values (71, 'Caterina Bernaldez', 2);
+insert into person (id, name, company_id) values (72, 'Elwin Kitney', 5);
+insert into person (id, name, company_id) values (73, 'Joelle Woodland', 1);
+insert into person (id, name, company_id) values (74, 'Sarene Impey', 2);
+insert into person (id, name, company_id) values (75, 'Stan Earey', 1);
+insert into person (id, name, company_id) values (76, 'Piper Chable', 4);
+insert into person (id, name, company_id) values (77, 'Kevina Emblow', 4);
+insert into person (id, name, company_id) values (78, 'Athena MacKeller', 1);
+insert into person (id, name, company_id) values (79, 'Tabbi Roath', 2);
+insert into person (id, name, company_id) values (80, 'Yoshi Levee', 3);
+insert into person (id, name, company_id) values (81, 'Trip Hatterslay', 2);
+insert into person (id, name, company_id) values (82, 'Emmaline Pullinger', 5);
+insert into person (id, name, company_id) values (83, 'Sharon Revell', 4);
+insert into person (id, name, company_id) values (84, 'Harwell Pedycan', 1);
+insert into person (id, name, company_id) values (85, 'Steffane Silcox', 5);
+insert into person (id, name, company_id) values (86, 'Maybelle Sellner', 5);
+insert into person (id, name, company_id) values (87, 'Antonia Besse', 2);
+insert into person (id, name, company_id) values (88, 'Town Dupre', 2);
+insert into person (id, name, company_id) values (89, 'Winny Soppit', 2);
+insert into person (id, name, company_id) values (90, 'Stephi Elliff', 4);
+insert into person (id, name, company_id) values (91, 'Blythe Jouning', 3);
+insert into person (id, name, company_id) values (92, 'Gregorio Yurasov', 2);
+insert into person (id, name, company_id) values (93, 'Andromache Devereux', 1);
+insert into person (id, name, company_id) values (94, 'Jess Haxell', 1);
+insert into person (id, name, company_id) values (95, 'Stuart Hayth', 4);
+insert into person (id, name, company_id) values (96, 'Grete Asals', 2);
+insert into person (id, name, company_id) values (97, 'Antoine Krop', 4);
+insert into person (id, name, company_id) values (98, 'Michaela Immings', 4);
+insert into person (id, name, company_id) values (99, 'Barbabra Blenkinship', 5);
+insert into person (id, name, company_id) values (100, 'Katherina Dumbare', 2);
+# Rows:
+100
+​
+
+
+1. В одном запросе получить
+- имена всех person, которые не состоят в компании с id = 5;
+- название компании для каждого человека.
+
+SELECT p.id, p.name, c.name AS company FROM person AS p JOIN company AS c ON c.id = p.company_id
+WHERE c.id != 5;
+
+ id |        name        | company
+----+--------------------+---------
+  1 | Lawton Goodge      | Oloo
+  2 | Marijn Clew        | Yabox
+  3 | Massimo Scopyn     | Yabox
+  4 | Jeana Impy         | Oloo
+  5 | Amii Gresly        | Oloo
+  6 | Kelcie Abbots      | Yabox
+  9 | Berton McLemon     | Meezzy
+ 10 | Moyna Knutton      | Oloo
+ 13 | Romy Wilshire      | Oloo
+ 14 | Morgen Inglese     | Meezzy
+ 16 | Boyd Schulkins     | Meezzy
+ 17 | Waldemar Di Biaggi | Meezzy
+ 18 | Hannie Malter      | Yabox
+ 19 | Codi Chadbourne    | Oloo
+ 20 | Janenna Cluderay   | Oloo
+ 24 | Rancell Deares     | Plajo
+ 25 | Padraig Aylmore    | Plajo
+ 26 | Fancy Morfield     | Plajo
+ 27 | Sherlock Pinney    | Meezzy
+ 28 | Netty Guyonnet     | Meezzy
+ 29 | Darsie Trevon      | Plajo
+ 31 | Clotilda Umpleby   | Oloo
+ 32 | Roger Leahey       | Plajo
+ 33 | Hesther Petriello  | Plajo
+ 34 | Ricki MacGeaney    | Yabox
+ 35 | Georgianne Hamshar | Oloo
+ 36 | Buck Dunabie       | Oloo
+ 37 | Edyth Solomonides  | Oloo
+ 40 | Yehudit Coard      | Plajo
+ 41 | Angelita Tripcony  | Yabox
+ 42 | Park Seeger        | Meezzy
+ 44 | Gates Rackley      | Meezzy
+ 45 | Patrizio Pinnigar  | Oloo
+ 46 | Waiter Joplin      | Yabox
+ 47 | Ricca Barlie       | Oloo
+ 48 | Lowell Smewing     | Oloo
+ 49 | Maurizio Dmitr     | Plajo
+(37 строк)
+
+
+2. Необходимо выбрать название компании с максимальным количеством человек
+ + количество человек в этой компании.
+
+SELECT name, lot from (SELECT c.name, COUNT (p.name) AS lot  FROM company AS c JOIN person AS p ON p.company_id = c.id
+GROUP BY c.name) temptable
+ORDER BY lot DESC
+LIMIT 1;
+
+ name | lot
+------+-----
+ Oloo |  14
+(1 строка)
